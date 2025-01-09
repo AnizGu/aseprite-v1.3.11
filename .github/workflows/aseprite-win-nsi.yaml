@@ -40,6 +40,11 @@ jobs:
             -DSKIA_DIR=./skia \
             -DSKIA_LIBRARY_DIR=./skia/out/Release-x64 \
             -DSKIA_LIBRARY=./skia/out/Release-x64/skia.lib
+      - name: Print Build Directory Structure
+        shell: bash
+        run: |
+          echo "Build directory structure:"
+          ls -al build
       - name: Compiling
         shell: bash
         run: |
