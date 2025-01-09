@@ -113,7 +113,7 @@ jobs:
                       </dict>
                     </array>
                     <key>CFBundleDisplayName</key>
-                    <string>Aseprite-1.3.11-beta2</string>
+                    <string>Aseprite-v1.3.11</string>
                     <key>CFBundleExecutable</key>
                     <string>aseprite</string>
                     <key>CFBundleIdentifier</key>
@@ -125,9 +125,9 @@ jobs:
                     <key>CFBundleInfoDictionaryVersion</key>
                     <string>6.0</string>
                     <key>CFBundleShortVersionString</key>
-                    <string>1.3.11-beta2</string>
+                    <string>1.3.11</string>
                     <key>CFBundleVersion</key>
-                    <string>1.3.11-beta2</string>
+                    <string>1.3.11</string>
                     <key>CFBundleIconFile</key>
                     <string>Aseprite.icns</string>
                     <key>LSApplicationCategoryType</key>
@@ -150,6 +150,6 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: aseprite-v1.3.11-beta2-mac
+          name: aseprite-v1.3.11-mac
           path: |
             ./pack/Aseprite*.dmg
