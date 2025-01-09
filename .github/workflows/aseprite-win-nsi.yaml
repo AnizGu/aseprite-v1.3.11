@@ -60,5 +60,5 @@ jobs:
           makensis aseprite.nsi
       - uses: actions/upload-artifact@v3
         with:
-          name: Aseprite-v1.3.11
-          path: Aseprite-v1.3.11.exe
+          name: Aseprite-v1.3.11-win
+          path: D:\a\aseprite-v1.3.11\aseprite-v1.3.11\Aseprite-1.3.11.exe
