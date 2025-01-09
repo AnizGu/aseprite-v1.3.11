@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "Aseprite"
-!define PRODUCT_VERSION "1.3.11-beta2"
+!define PRODUCT_VERSION "1.3.11"
 !define PRODUCT_PUBLISHER "Igara Studio S.A."
 !define PRODUCT_WEB_SITE "https://www.aseprite.org/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\aseprite.exe"
