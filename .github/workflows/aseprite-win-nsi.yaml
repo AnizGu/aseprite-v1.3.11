@@ -40,11 +40,14 @@ jobs:
             -DSKIA_DIR=./skia \
             -DSKIA_LIBRARY_DIR=./skia/out/Release-x64 \
             -DSKIA_LIBRARY=./skia/out/Release-x64/skia.lib
-      - name: Print Build Directory Structure
-        shell: bash
+      - name: Print Absolute Build Path and Directory Structure
+        shell: powershell
         run: |
-          echo "Build directory structure:"
-          ls -al build
+          Write-Host "Absolute path of build directory:"
+          $absolutePath = (Resolve-Path build).Path
+          Write-Host $absolutePath
+          Write-Host "Build directory structure:"
+          Get-ChildItem -Path $absolutePath -Recurse | Format-Table -AutoSize
       - name: Compiling
         shell: bash
         run: |
