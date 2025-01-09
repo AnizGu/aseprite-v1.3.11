@@ -16,8 +16,8 @@ SetCompressor lzma
 
 ; MUI 预定义常量
 !define MUI_ABORTWARNING
-!define MUI_ICON "D:\a\aseprite\aseprite\build\bin\data\icons\ase.ico"
-!define MUI_UNICON "D:\a\aseprite\aseprite\build\bin\data\icons\ase.ico"
+!define MUI_ICON "D:\a\aseprite-v${PRODUCT_VERSION}\aseprite-v${PRODUCT_VERSION}\build\bin\data\icons\ase.ico"
+!define MUI_UNICON "D:\a\aseprite-v${PRODUCT_VERSION}\aseprite-v${PRODUCT_VERSION}\build\bin\data\icons\ase.ico"
 
 ; 欢迎页面
 !insertmacro MUI_PAGE_WELCOME
