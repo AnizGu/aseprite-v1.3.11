@@ -22,7 +22,7 @@ SetCompressor lzma
 ; 欢迎页面
 !insertmacro MUI_PAGE_WELCOME
 ; 许可协议页面
-!insertmacro MUI_PAGE_LICENSE "D:\a\aseprite\aseprite\build\bin\data\EULA.txt"
+!insertmacro MUI_PAGE_LICENSE "D:\a\aseprite-v${PRODUCT_VERSION}\aseprite-v${PRODUCT_VERSION}\build\bin\data\EULA.txt"
 ; 安装目录选择页面
 !insertmacro MUI_PAGE_DIRECTORY
 ; 安装过程页面
@@ -51,12 +51,12 @@ ShowUnInstDetails show
 Section "MainSection" SEC01
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
-  File /r "D:\a\aseprite\aseprite\build\bin\*.*"
+  File /r "D:\a\aseprite-v${PRODUCT_VERSION}\aseprite-v${PRODUCT_VERSION}\build\bin\*.*"
   File /r "libcrypto-1_1-x64.dll"
   CreateDirectory "$SMPROGRAMS\Aseprite"
   CreateShortCut "$SMPROGRAMS\Aseprite\Aseprite.lnk" "$INSTDIR\aseprite.exe"
   CreateShortCut "$DESKTOP\Aseprite.lnk" "$INSTDIR\aseprite.exe"
-  File "D:\a\aseprite\aseprite\build\bin\aseprite.exe"
+  File "D:\a\aseprite-v${PRODUCT_VERSION}\aseprite-v${PRODUCT_VERSION}\build\bin\aseprite.exe"
 SectionEnd
 
 Section -AdditionalIcons
