@@ -14,7 +14,7 @@ jobs:
             build_type: Release
             enable_ui: on
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: "recursive"
       - name: ccache
@@ -52,5 +52,5 @@ jobs:
           makensis aseprite.nsi
       - uses: actions/upload-artifact@v3
         with:
-          name: Aseprite-1.3.11-beta2
-          path: Aseprite-1.3.11-beta2.exe
+          name: Aseprite-v1.3.11
+          path: Aseprite-v1.3.11.exe
